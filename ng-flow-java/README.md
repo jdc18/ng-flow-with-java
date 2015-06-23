@@ -10,7 +10,14 @@ I am using wildfly, but with some minor modifications on the pom you can probabl
 
 Building
 --------
+You need bower and nodejs to install the libraries, https://github.com/bower/bower
 
+Change directory to  ng-flow-java/src/main/webapp and run bower install
+    
+    bower install
+    
+Just run a mvn install 
+    
     mvn install
 
 
