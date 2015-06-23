@@ -11,7 +11,7 @@
 	/*
 	 * You can use CORS changing the targe be sure to specify the domain in the UploadServlet file (java)
 	 */
-	var upload = angular.module('UploadModule', [ 'ngResource','flow' ]).config(
+	var upload = angular.module('UploadModule', [,'flow' ]).config(
 			[ 'flowFactoryProvider', function(flowFactoryProvider) {
 				flowFactoryProvider.defaults = {
 					target : '/ng-flow-java/upload',
