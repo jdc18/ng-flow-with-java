@@ -1,0 +1,107 @@
+body{
+	background-color:transparent;
+}
+.navbar {
+  background-color: #f15a24;
+  border-color: #f15a24;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar .navbar-text {
+  color: #ffffff;
+}
+.navbar .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #f15a24;
+}
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #f15a24;
+}
+.navbar .navbar-toggle {
+  border-color: #f15a24;
+}
+.navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+  background-color: #f15a24;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ffffff;
+}
+.navbar .navbar-link {
+  color: #ffffff;
+}
+.navbar .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover, .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #f15a24;
+  }
+}
+
+.navbar-brand{
+	padding-top:10px;
+}
+
+#content, #contenido{
+	height:100%;
+}
+
+#busqueda-contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#content{
+  padding: 10px 0;
+  background:rgba(255,255,255,0.2);
+}
+
+#busqueda {
+  position: relative;
+  left: -50%;
+  width: 600px;
+}
+
+.busqueda-control {
+  width: 350px;
+}
+
+.busqueda-label {
+  width: 80px;
+  text-align: right;
+  display: inline-block;
+}
+
+.busqueda-formatos {
+  position: relative;
+  top: -25px;
+}
+
+#bajo-pedido{
+	position: absolute;
+	bottom: 40px;
+	left:30px;
+}
