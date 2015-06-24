@@ -152,8 +152,9 @@ public class UploadServlet extends HttpServlet {
 
 		int FlowChunkSize = HttpUtils.toInt(
 				request.getParameter("flowChunkSize"), -1);
+		
 		long FlowTotalSize = HttpUtils.toLong(
-				request.getParameter("flowTotalSize"), -1);
+				request.getParameter("flowTotalSize"), -1); //flowTotalChunks
 		String FlowIdentifier = request.getParameter("flowIdentifier");
 		String FlowFilename = request.getParameter("flowFilename");
 		String FlowRelativePath = request.getParameter("flowRelativePath");
@@ -172,19 +173,5 @@ public class UploadServlet extends HttpServlet {
 		return info;
 	}
 
-	private boolean crearDirectorioPrivado(String dir) {
-		// Vemos si esta creado, si no lo creamos
-		File carpeta = new File(dir);
-		if (!carpeta.exists()) {
-			if (carpeta.mkdir()) {
-				System.out.println("Directorio " + dir + " creado!");
-				return true;
-			} else {
-				System.out.println("No se pudo crear el directorio " + dir);
-				return false;
-			}
-		}
-		System.out.println("Directorio" + dir + " ya existe no fue creado");
-		return true;
-	}
+	
 }
