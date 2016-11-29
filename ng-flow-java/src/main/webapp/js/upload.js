@@ -18,6 +18,7 @@
 					permanentErrors : [ 500, 501 ],
 					maxChunkRetries : 1,
 					chunkRetryInterval : 5000,
+					forceChunkSize : true,
 					simultaneousUploads : 4,
 					progressCallbacksInterval : 1,
 					withCredentials : true,
